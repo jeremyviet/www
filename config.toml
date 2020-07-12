@@ -1,0 +1,96 @@
+######################## default configuration ####################
+baseURL = "https://www.example.com"
+title = "Jeremy Viet"
+theme = "jv"
+languageName = "En"
+languageCode = "en-us"
+# post pagination
+paginate = "5"
+# disqus short name
+disqusShortname = "" # get your shortname form here : https://disqus.com
+
+############################# output ##############################
+[outputs]
+home = [ "HTML", "RSS", "json"]
+
+# render unsafe html
+[markup.goldmark.renderer]
+unsafe = true
+
+############################# Plugins ##############################
+# CSS Plugins
+[[params.plugins.css]]
+link = "plugins/bootstrap/bootstrap.min.css"
+[[params.plugins.css]]
+link = "plugins/themify-icons/themify-icons.css"
+
+# JS Plugins
+[[params.plugins.js]]
+link = "plugins/jQuery/jquery.min.js"
+[[params.plugins.js]]
+link = "plugins/bootstrap/bootstrap.min.js"
+[[params.plugins.js]]
+link = "plugins/search/fuse.min.js"
+[[params.plugins.js]]
+link = "plugins/search/mark.js"
+[[params.plugins.js]]
+link = "plugins/search/search.js"
+
+
+################################ menu ##################################
+[[menu.main]]
+name = "About"
+URL = "about"
+weight = 1 
+
+[[menu.main]]
+name = "Adventures"
+URL = "adventures"
+weight = 2 
+
+[[menu.main]]
+name = "Bookshelf"
+URL = "bookshelf"
+weight = 3 
+
+[[menu.main]]
+name = "Resume"
+URL = "resume"
+weight = 4 
+
+#################### default parameters ################################
+[params]
+logo = "images/logo.png"
+# Meta data
+description = "Engineering Leader, Outdoorsman, Human"
+author = "Themefisher"
+# search  
+search = true
+# contact form action
+contact_form_action = "#" # contact form works with https://formspree.io
+# copyright
+copyright = "jeremyviet.com"
+
+# Preloader
+[params.preloader]
+enable = true
+preloader = "" # use jpg, png, svg or gif format.
+
+
+############################# social site ########################
+[[params.social]]
+
+[[params.social]]
+title = "instagram"
+icon = "ti-instagram" # themify icon : https://themify.me/themify-icons
+link = "https://www.instagram.com/jeremyviet"
+
+[[params.social]]
+title = "github"
+icon = "ti-github" # themify icon : https://themify.me/themify-icons
+link = "https://www.github.com/users/jeremyviet"
+
+[[params.social]]
+title = "linkedin"
+icon = "ti-linkedin" # themify icon : https://themify.me/themify-icons
+link = "https://www.linkedin.com/u/jeremyviet"

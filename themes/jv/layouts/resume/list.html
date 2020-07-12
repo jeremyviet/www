@@ -1,0 +1,25 @@
+{{ define "main" }}
+
+<section class="section-sm pb-0 bg-light">
+  <div class="container">
+    <div class="row">
+        <div class="container">
+        {{ with .Params.image }}
+        <object data="{{ . | absURL }}" type="application/pdf" style="width:95%;height:100vh;padding:0;margin:0;border:0;">
+            <embed src="{{ . | absURL }}" type="application/pdf" />
+        </object>
+        {{ end }}
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="col-lg-8 mx-auto">
+      <div class="content">{{.Content}}</div>
+    </div>
+  </div>
+</section>
+
+{{ end }}

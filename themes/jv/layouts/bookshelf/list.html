@@ -1,0 +1,46 @@
+{{ define "main" }}
+
+<section class="section-sm pb-0 bg-light">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 mx-auto text-center">
+        <h1 class="text-center">{{.Title | markdownify}}</h1>
+        {{ with .Params.image }}
+        <img src="{{ . | absURL }}" alt="author" class="author-img">
+        {{ end }}
+      </div>
+    </div>
+  </div>
+</section>
+<section class="section">
+    <div>
+      <style type="text/css" media="screen">
+        .gr_grid_container {
+          margin-left: auto;
+            /* customize grid container div here. eg: width: 500px; */
+        }
+
+        .gr_grid_book_container {
+          /* customize book cover container div here */
+          float: left;
+          width: 98px;
+          height: 160px;
+          padding: 0px 10px;
+          overflow: hidden;
+        }
+      </style>
+      <div id="gr_grid_widget_1594522060">
+      </div>
+      <script src="https://www.goodreads.com/review/grid_widget/61292262.Currently%20Reading?cover_size=medium&hide_link=true&hide_title=true&num_books=5&order=d&shelf=currently-reading&sort=date_added&widget_id=1594522060" type="text/javascript" charset="utf-8"></script>
+    </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="col-lg-8 mx-auto">
+      <div class="content">{{.Content}}</div>
+    </div>
+  </div>
+</section>
+
+{{ end }}
