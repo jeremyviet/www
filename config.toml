@@ -1,5 +1,5 @@
 ######################## default configuration ####################
-baseURL = "https://www.example.com"
+baseURL = "https://www.jeremyviet.com"
 title = "Jeremy Viet"
 theme = "jv"
 languageName = "En"
@@ -53,10 +53,15 @@ name = "Bookshelf"
 URL = "bookshelf"
 weight = 3 
 
-[[menu.main]]
-name = "Resume"
-URL = "resume"
-weight = 4 
+# [[menu.main]]
+# name = "Playlists"
+#URL = "playlists"
+#weight = 4
+
+# [[menu.main]]
+# name = "Resume"
+# URL = "resume"
+# weight = 5
 
 #################### default parameters ################################
 [params]
